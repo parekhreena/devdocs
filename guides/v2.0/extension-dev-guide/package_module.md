@@ -13,14 +13,14 @@ redirect_from: /guides/v1.0/extension-dev-guide/package_module.html
 
 The Magento system uses Composer packages to distribute, install, and upgrade modules in an application instance.
 
-To package an module, you must:
+To package a module, you must:
 
 * Create a Magento Composer file (`composer.json`).
 * Package and publish the module. 
 
 
 
-<h2 id="composer">Create a Magento Composer file</h2>
+<h2 id="composer">Create a Magento Composer File</h2>
 
 The Magento `composer.json` file defines the name, requirements, version, and other basic information about the module. This file must be placed in the root directory of the module.
 
@@ -49,7 +49,7 @@ The `composer.json` uses [Composer's generic schema](https://getcomposer.org/doc
 </table>
 
 
-The following example is a `composer.json` file for a module:
+The following is an example of a `composer.json` file for a module:
 
 {% highlight JSON %}
 {
@@ -74,7 +74,7 @@ The following example is a `composer.json` file for a module:
 
 <h2 id="packaging">Package and publish a module</h2>
 
-After you have created the module's `composer.json` file in the root directory of the module, Composer can recognize your package as compatible with its deployment strategy. Such packages can be published to a code repository (GitHub, SVN, etc.), packagist.org, or on your own private package repository.
+After you have created the module's `composer.json` file in the root directory of the module, the Composer can recognize your package as compatible with its deployment strategy. Such packages can be published to a code repository (GitHub, SVN, etc.), packagist.org, or on your own private package repository.
 
 <h3 id="hosting">Hosting on GitHub and Packagist</h3>
 Prerequisite: git must be set up on your machine.
